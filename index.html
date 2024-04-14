@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Damien Harwood <br> 
+        <div class="header-title">Game Developer</div></h1>
+      <p>
+        <div class="header-languages">C#, C++, Python, Java, SQL, Delphi, HTML</div>
+      </p>
+    </div>
+  </header>
+  
+  <div class="loader">
+    <main>
+        <section>
+        <div class="about">
+          <h2><br>About Me</h2>
+          <div class="aboutdesc">
+            <p>I am a graduate of BCIS in Game Design and Development. I am a hard-working and dedicated game developer with a passion for problem solving in mathematics, logic and programming.</p>
+          </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Latest Project:</h3>
+            <div class="project-images">
+            <img src="Grounding.png" alt="Project 1 Image 1">
+            <img src="Grounding_unity.png" alt="Project 1 Image 2">
+            </div>
+            <p>This game addresses mental health and panic attacks, bringing attention to what panic attacks are and how people can either deal with them, 
+              or help people they know that have them.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Waves</h3>
+            <div class="project-video">
+              <video controls>
+                <source src="wave_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p>I had the most fun developing this project, which involved the procedural generation of waves, while also adding a mesh that allows collisions. 
+              There is also a mini-game in which you can shoot the orange cubes for points to progress to deeper levels. The purple cube's function is to demonstrate the colliders. </p>
+          </div>
+
+        <div class="project">
+            <h3>OpenGL Chess</h3>
+            <div class="project-images">
+            <img src="chess.png" alt="Project 1 Image 1">
+            <img src="chess_terrain.png" alt="Project 1 Image 2">
+            </div>
+            <p><br>Chess board, pieces, and terrain created with OpenGL. This project required plotting all vertices, positioning the objects once they're made, 
+              creating an import method and using it for textures, applying said textures, and finally creating the terrain and the skybox around it all. 
+              This is all done purely through C++.</p>
+          </div>
+
+        <div class="project">
+            <h3>Evolutionary Algorithm:</h3>
+            <div class="project-images">
+                <img src="evolutionary_algorithm.png" alt="Project 1 Image 1">
+            </div>
+            <p><br>Using a Unity car racing game provided by Vega, I created an algorithm that evolves the cars to reach further distances in lower amounts of time, all while avoiding local optimums.</p>
+          </div>
+
+        <div class="project">
+            <h3>Math:</h3>
+            <div class="project-images">
+            <img src="math1.png" alt="Project 1 Image 1">
+            <img src="unity_shape.png" alt="Project 1 Image 2">
+            </div>
+            <p>            
+              <br>Math is beautiful. One of the benefits of being a game developer is the ability to see the visual effects of math in a virtual environment, 
+              and experiment with the many variations of different algorithms and expressions. An example is seeing Wolfram's Elementary Cellular Automata on the left,
+              and the generating of cubes in Unity world space at points that are described by an algorithm, on the right.</p>
+          </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:damienharwood14@gmail.com">damienharwood14@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/damien-harwood-0791931a4/">https://www.linkedin.com/in/damien-harwood-0791931a4/</a></p>
+              </div>
+          </section>
+    </main>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Scroll event listener
+      $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        if (scrollPos > 50) {
+          $('header').addClass('scrolled');
+        } else {
+          $('header').removeClass('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
+<footer>
+    <p>&copy; 2023 Damien Harwood. All rights reserved.</p>
+</footer>
+</html>
