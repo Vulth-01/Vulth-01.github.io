@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  font-size: x-large;
+  font-size: large;
   transition: opacity 1s ease-in-out;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 .header-title{
   color:#e0e0e0;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .header-languages{
