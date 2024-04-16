@@ -2,11 +2,10 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(54, 3, 84);
-  margin-top: 0;
   margin: 0;
   padding: 0;
   color: #000000;
-  font-size: large;
+  font-size: x-large;
   transition: opacity 1s ease-in-out;
 }
 
@@ -47,7 +46,7 @@ header {
 }
 .header-title{
   color:#e0e0e0;
-  font-size: large;
+  font-size: xx-large;
 }
 
 .header-languages{
@@ -100,9 +99,8 @@ nav a:hover {
 main {
   color: #c4f6ff;
   max-width: 1200px;
-  margin-top: 20px auto 0;
+  margin: 80px auto 0;
   padding: 20px;
-  transform: scale(0.75);
 }
 
 section {
