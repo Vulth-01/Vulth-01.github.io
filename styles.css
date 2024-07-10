@@ -1,10 +1,9 @@
 /* General styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(54, 3, 84);
+  background-image: linear-gradient(to top right, #6f2d96, #326e62);
   margin: 0;
   padding: 0;
-  color: #000000;
   font-size: large;
   transition: opacity 1s ease-in-out;
 }
@@ -34,7 +33,7 @@ ul {
 
 /* Header styles */
 header {
-  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom left, #326e62, #794399);
   color: #ffffff;
   padding: 10px;
   text-align: center;
@@ -154,7 +153,7 @@ section h2 {
 
 
 .project {
-  background-color: #000000;
+  background-image: linear-gradient(to top right, #1f1f1f, #737373);
   color:#ffffff;
   padding: 20px;
   margin-bottom: 30px;
@@ -202,7 +201,7 @@ section h2 {
 #contact {
   
     color: #000000;
-    background-color: #79b2a0;
+    background-image: linear-gradient(to top right, #a3a3a3, #6aa694, #a3a3a3);
     padding: 40px 20px;
 }
 
