@@ -1,5 +1,7 @@
 /* General styles */
 body {
+  transform: scale(0.8);
+  transform-origin: top;
   font-family: 'Open Sans', sans-serif;
   background-image: linear-gradient(to top right, #6f2d96, #326e62);
   margin: 0;
