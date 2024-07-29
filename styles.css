@@ -170,6 +170,8 @@ section h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  text-align-last: center;
 }
 
 .project img {
