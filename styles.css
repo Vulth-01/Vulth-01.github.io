@@ -37,12 +37,14 @@ ul {
 header {
   background-image: linear-gradient(to bottom left, #326e62, #666666);
   color: #ffffff;
-  padding: 2px;
+  padding: 10px; /* Adjusted padding for a more consistent look */
   text-align: center;
   position: fixed;
-  top: 20;
+  top: 0; /* Ensure it's at the top of the viewport */
   left: 0;
   right: 0;
+  width: 100%; /* Make sure it stretches across the full width */
+  box-sizing: border-box; /* Include padding in width calculation */
   z-index: 1;
 }
 .header-title{
