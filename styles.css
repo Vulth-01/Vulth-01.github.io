@@ -56,12 +56,12 @@ header {
 }
 
 .header-title {
-  color: #ffbff4;			/* TITLE */
+  color: #87ded1;			/* TITLE */
   font-size: x-large;
 }
 
 .header-languages {
-  color: #ffbff4;			/* LANGUAGES */
+  color: #a2dbd3;			/* LANGUAGES */
 }
 
 header.loaded {
