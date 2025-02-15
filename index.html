@@ -1,183 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVHG4GJ2G0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BVHG4GJ2G0');
-</script>
-  
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Damien Harwood, Game Developer">
+    <title>Damien Harwood | Game Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Damien Harwood <br> 
-        <div class="header-title">Game Developer</div></h1>
-        <div class="header-languages">C#, C++, Unity, Unreal Engine, Python, Java, SQL, Delphi, HTML & CSS, Javascript, Construct 3</div>
-    </div>
-  </header>
-  
-  <div class="loader">
-    <main>
-        <section>
-        <div class="about">
-          <h2><br>About Me</h2>
-          <div class="aboutdesc">
-            <p>I am a graduate of BCIS in Game Design and Development. I am a hard-working and dedicated game developer with a passion for problem solving in mathematics, logic and programming.</p>
-          </div>
+    <!-- Header with Parallax effect -->
+    <header>
+        <div class="header-content">
+            <h1>Damien Harwood</h1>
+            <h2>Game Developer & Programmer</h2>
+            <p class="skills">C#, C++, Unity, Unreal Engine, Python, Java, SQL, Delphi, HTML & CSS, Javascript, Construct 3
+            </p>
         </div>
+    </header>
+
+    <main>
+        <!-- About Section with Slide-in Animation -->
+        <section class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a graduate of BCIS in Game Design and Development. I am a hard-working and dedicated game developer with a passion for problem solving in mathematics, logic and programming.</p>
+            </div>
         </section>
+<!-- Project Section with Parallax and Hover Effects -->
+<section class="projects">
+    <h2>My Projects</h2>
 
-        <section>
-        <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Solace - Individual</h3>
-                <div class="project-images">
-                <img src="Solace_Create.png" alt="Project 1 Image 1">
-                <img src="Solace_Open.png" alt="Project 1 Image 1">
-                <img src="Solace_Editor_.png" alt="Project 1 Image 1">
-                </div>
-                <p>I am currently developing a game engine by the name of Solace. This project has and will help me grow my understanding of the development of games and efficiency in programming.
-                </p>
+    <!-- Project 1: Solace -->
+    <div class="project" id="solace">
+        <div class="project-header">
+            <h3>Solace Engine</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/Solace_Create.png" alt="Solace Engine Create">
+                <img src="images/Solace_Open.png" alt="Solace Engine Open">
+                <img src="images/Solace_Editor_.png" alt="Solace Engine Editor">
             </div>
+            <p>A personal project focused on building a game engine named Solace. This project helps me refine my understanding of game development and efficiency in programming.</p>
+        </div>
+    </div>
 
-
-          
-            <div class="project">
-                <h3>OpenGL Chess - Individual</h3>
-                <div class="project-images">
-                <img src="chess.png" alt="Project 1 Image 1">
-                <img src="stunk.jpg" alt="Project 1 Image 3">
-                </div>
-                <p><br>Chess board, pieces, and terrain created with OpenGL. This project required plotting all vertices, positioning the objects once they're made, 
-                  creating an import method and using it for textures, applying said textures, and finally creating the terrain and the skybox around it all. 
-                  This is all done purely through C++.</p>
-              </div>
-
-
-          
-            <div class="project">
-                <h3>AI Creatures - Individual</h3>
-                <div class="project-images">
-                <img src="slimes.png" alt="Project 1 Image 1">
-                </div>
-                <p>This is a project with small creatures that have AI brains exploring a map in order to find food to survive and reproduce, 
-                  furthering their lifespan and their bloodline.
-                </p>
+    <!-- Project 2: OpenGL Chess -->
+    <div class="project" id="openGL">
+        <div class="project-header">
+            <h3>OpenGL Chess</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/chess.png" alt="OpenGL Chess">
+                <img src="images/stunk.jpg" alt="OpenGL Chess Additional Image">
             </div>
+            <p>A chess game built using OpenGL in C++, showcasing advanced object manipulation and custom rendering techniques. The project involved creating chess pieces, a board, and terrain through vertex plotting and texture application.</p>
+        </div>
+    </div>
 
-
-          
-            <div class="project">
-                <h3>Grounding - Team</h3>
-                <div class="project-images">
-                <img src="Grounding.png" alt="Project 1 Image 1">
-                <img src="Grounding_unity.png" alt="Project 1 Image 2">
-                </div>
-                <p>This game addresses mental health and panic attacks, bringing attention to what panic attacks are and how people can either deal with them, 
-                  or help people they know that have them.
-                </p>
+    <!-- Project 3: AI Creatures -->
+    <div class="project" id="ai-creatures">
+        <div class="project-header">
+            <h3>AI Creatures</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/slimes.png" alt="AI Creatures Slimes">
             </div>
+            <p>This project features AI-driven creatures exploring terrain, demonstrating biological ecosystem simulations and AI behavior in action. The creatures search for food and reproduce to maintain their bloodline.</p>
+        </div>
+    </div>
 
+    <!-- Project 4: Grounding -->
+    <div class="project" id="grounding">
+        <div class="project-header">
+            <h3>Grounding</h3>
+            <p class="role">Team Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/Grounding.png" alt="Grounding Project Image 1">
+                <img src="images/Grounding_unity.png" alt="Grounding Project Image 2">
+            </div>
+            <p>A game addressing mental health and panic attacks, highlighting their impact and offering ways to manage or support others dealing with them.</p>
+        </div>
+    </div>
 
-          
-            <div class="project">
-                <h3>Procedurally Generated Waves - Individual</h3>
-                <div class="project-video">
-                  <video controls>
-                    <source src="wave_vid.mp4" type="video/mp4">
+        <!-- Project 5: Procedurally Generated Waves -->
+    <div class="project" id="procedural-waves">
+        <div class="project-header">
+            <h3>Procedurally Generated Waves</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-video">
+                <video controls>
+                    <source src="images/wave_vid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                  </video>
+                </video>
+            </div>
+            <p>This project involves the procedural generation of waves with collision meshes. It also includes a mini-game where players shoot orange cubes to score points and progress to deeper levels. The purple cubes demonstrate the mesh colliders in action.</p>
+        </div>
+    </div>
+
+
+    <!-- Project 6: Procedurally Generated Terrain -->
+    <div class="project" id="procedural-terrain">
+        <div class="project-header">
+            <h3>Procedurally Generated Terrain</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/proced.jpg" alt="Procedurally Generated Terrain">
+            </div>
+            <p>Building upon the wave generation, this project extends the concept to generate terrain using a different algorithm to create more practical environments for game development.</p>
+        </div>
+    </div>
+
+    <!-- Project 7: Evolutionary Algorithms -->
+    <div class="project" id="evolutionary-algorithms">
+        <div class="project-header">
+            <h3>Evolutionary Algorithms</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/evolutionary_algorithm.png" alt="Evolutionary Algorithms">
+            </div>
+            <p>In this project, I created an algorithm that evolves Unity car racing game cars to travel greater distances in shorter times while avoiding local optimums. It demonstrates the power of evolutionary strategies in solving complex problems.</p>
+        </div>
+    </div>
+
+    <!-- Project 8: Game Development and Math -->
+    <div class="project" id="game-dev-math">
+        <div class="project-header">
+            <h3>Game Development and Math</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/math1.png" alt="Game Development and Math 1">
+                <img src="images/unity_shape.png" alt="Game Development and Math 2">
+            </div>
+            <p>Math plays a vital role in game development. This project explores the visual effects of math in virtual environments, such as generating cellular automata and cubes in Unity's world space, driven by algorithmic principles.</p>
+        </div>
+    </div>
+
+    <!-- Project 9: Goblin 3D Model -->
+    <div class="project" id="goblin-model">
+        <div class="project-header">
+            <h3>Goblin 3D Model</h3>
+            <p class="role">Individual Project</p>
+        </div>
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/Goblin.png" alt="Goblin 3D Model">
+            </div>
+            <p>This project showcases a 3D model of a goblin character, created for use in a game. It helped me hone my skills in character modeling and asset creation.</p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section with Parallax Background -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><a href="mailto:damienharwood14@gmail.com">Email</a></p>
+                    <p><a href="https://github.com/Vulth01">GitHub</a></p>
+                    <p><a href="https://www.linkedin.com/in/damien-harwood-0791931a4/">LinkedIn</a></p>
+                    <p><a href="https://www.codewars.com/users/Vulth">Codewars</a></p>
+                    <p><a href="https://leetcode.com/u/Vulth/">LeetCode</a></p>
                 </div>
-                <p>I had a lot of fun developing this project, which involved the procedural generation of waves, while also adding a mesh that allows collisions. 
-                  There is also a mini-game in which you can shoot the orange cubes for points to progress to deeper levels. The purple cube's function is to demonstrate the colliders. </p>
-              </div>  
-
-
-          
-            <div class="project">
-                <h3>Procedurally Generated Terrain</h3>
-                <div class="project-images">
-                  <img src="proced.jpg" alt="Project 1 Image 1">
-                </div>
-                <p>A continuation of the procedurally generated waves, the procedurally generated terrain uses the same base functionality but with a different algorithm to serve a more practical purpose for my games. </p>
-              </div>
-
-
-            <div class="project">
-                <h3>Evolutionary Algorithms - Individual</h3>
-                <div class="project-images">
-                    <img src="evolutionary_algorithm.png" alt="Project 1 Image 1">
-                </div>
-                <p><br>Using a Unity car racing game provided by Vega, I created an algorithm that evolves the cars to reach further distances in lower amounts of time, all while avoiding local optimums.</p>
-              </div>
-
-
-            <div class="project">
-                <h3>Game Development and Math:</h3>
-                <div class="project-images">
-                <img src="math1.png" alt="Project 1 Image 1">
-                <img src="unity_shape.png" alt="Project 1 Image 2">
-                </div>
-                <p>            
-                  <br>Math is beautiful. One of the benefits of being a game developer is the ability to see the visual effects of math in a virtual environment, 
-                  and experiment with the many variations of different algorithms and expressions. An example is seeing Wolfram's Elementary Cellular Automata on the left,
-                  and the generating of cubes in Unity world space at points that are described by an algorithm, on the right.</p>
-              </div>
-
-
-            <div class="project">
-                <h3>Goblin - Individual</h3>
-                <div class="project-images">
-                    <img src="Goblin.png" alt="Project 1 Image 1">
-                </div>
-                <p><br>A 3D model of a goblin character that I made for a game .</p>
-              </div>
-
-
-          
+            </div>
         </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><a href="mailto:damienharwood14@gmail.com"> - Email</a></p>
-                <p><a href="https://github.com/Vulth01"> - Github </a></p>
-                <p><a href="https://www.linkedin.com/in/damien-harwood-0791931a4/"> - LinkedIn </a></p>
-                <p><a href="https://www.codewars.com/users/Vulth"> - Codewars </a></p>
-                <p><a href="https://leetcode.com/u/Vulth/"> - LeetCode </a></p>
-              </div>
-          </section>
     </main>
-</div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Scroll event listener
-      $(window).scroll(function(){
-        var scrollPos = $(window).scrollTop();
-        if (scrollPos > 50) {
-          $('header').addClass('scrolled');
-        } else {
-          $('header').removeClass('scrolled');
-        }
-      });
-    });
-  </script>
+
+    <footer>
+        <p>&copy; 2025 Damien Harwood. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
-<footer>
-    <p>&copy; 2023 Damien Harwood. All rights reserved.</p>
-</footer>
 </html>
