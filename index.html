@@ -1,196 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Damien Harwood, Game Developer">
-    <title>Damien Harwood | Game Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header with Parallax effect -->
-    <header>
-        <div class="header-content">
-            <h1>Damien Harwood</h1>
-            <h2>Game Developer & Programmer</h2>
-            <p class="skills">C#, C++, Unity, Unreal Engine, Python, Java, SQL, Delphi, HTML & CSS, Javascript, Construct 3
-            </p>
-        </div>
-    </header>
+    <meta charset="utf-8">
+    <meta name="description" content="Game and software developer specializing in C++ engine development." />
+    <title>Damien Harwood - Game Developer</title>
 
-    <main>
-        <!-- About Section with Slide-in Animation -->
-        <section class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a graduate of BCIS in Game Design and Development. I am a hard-working and dedicated game developer with a passion for problem solving in mathematics, logic and programming.</p>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/unity_shape.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="title">Damien Harwood</div>
+            <img class="landing_logo" src="images/unity_shape.png" alt="Portrait">
+        </header>
+
+        <section id="about_me">
+            <p>Hi there! I'm Damien, a passionate game developer who creates immersive gaming experiences using C# and C++. Welcome to my portfolio!</p>
+        </section>
+
+        <section id="quick_links">
+            <a href="mailto:damienharwood14@gmail.com" target="_blank" title="Contact Me"><i class="fa fa-envelope"></i></a>
+            <a href="https://github.com/Vulth01" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/damien-harwood-0791931a4/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.codewars.com/users/Vulth" target="_blank" title="Codewars"><i class="fa fa-terminal"></i></a>
+            <a href="https://leetcode.com/u/Vulth/" target="_blank" title="Leetcode"><i class="fa fa-terminal"></i></a>
+        </section>
+
+
+        <section class="buttons">
+            <div class="button_container">
+                <button class="btn" onclick="toggleVisibility('projects')">Projects</button>
+                <button class="btn" onclick="toggleVisibility('career')">Career</button>
+                <button class="btn" onclick="toggleVisibility('skills')">Skills</button>
             </div>
         </section>
-<!-- Project Section with Parallax and Hover Effects -->
-<section class="projects">
-    <h2>My Projects</h2>
-
-    <!-- Project 1: Solace -->
-    <div class="project" id="solace">
-        <div class="project-header">
-            <h3>Solace Engine</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/Solace_Create.png" alt="Solace Engine Create">
-                <img src="images/Solace_Open.png" alt="Solace Engine Open">
-                <img src="images/Solace_Editor_.png" alt="Solace Engine Editor">
-            </div>
-            <p>I am currently developing a game engine by the name of Solace. This project has and will help me grow my understanding of the development of games and efficiency in programming.
-            </p>
-        </div>
-    </div>
-
-    <!-- Project 2: OpenGL Chess -->
-    <div class="project" id="openGL">
-        <div class="project-header">
-            <h3>OpenGL Chess</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/chess.png" alt="OpenGL Chess">
-                <img src="images/stunk.jpg" alt="OpenGL Chess Additional Image">
-            </div>
-            <p>Chess board, pieces, and terrain created with OpenGL. This project required plotting all vertices, positioning the objects once they're made, creating an import method and using it for textures, applying said textures, and finally creating the terrain and the skybox around it all. This is all done purely through C++.
-            </p>
-        </div>
-    </div>
-
-    <!-- Project 3: AI Creatures -->
-    <div class="project" id="ai-creatures">
-        <div class="project-header">
-            <h3>AI Creatures</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/slimes.png" alt="AI Creatures Slimes">
-            </div>
-            <p>This project features both neural networks and evolutionary algorithms.  The creatures must learn optimal methods of searching for food, so that they may reproduce to maintain their bloodline.</p>
-        </div>
-    </div>
-
-    <!-- Project 4: Grounding -->
-    <div class="project" id="grounding">
-        <div class="project-header">
-            <h3>Grounding</h3>
-            <p class="role">Team Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/Grounding.png" alt="Grounding Project Image 1">
-                <img src="images/Grounding_unity.png" alt="Grounding Project Image 2">
-            </div>
-            <p>This game addresses mental health and panic attacks, bringing attention to what panic attacks are and how people can either deal with them, or help people they know that have them.
-            </p>
-        </div>
-    </div>
-
-        <!-- Project 5: Procedurally Generated Waves -->
-    <div class="project" id="procedural-waves">
-        <div class="project-header">
-            <h3>Procedurally Generated Waves</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-video">
-                <video controls>
-                    <source src="images/wave_vid.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <p>This project involves the procedural generation of waves with collision meshes. It also includes a mini-game where players shoot orange cubes to score points and progress to deeper levels. The purple cubes demonstrate the mesh colliders in action.</p>
-        </div>
-    </div>
-
-
-    <!-- Project 6: Procedurally Generated Terrain -->
-    <div class="project" id="procedural-terrain">
-        <div class="project-header">
-            <h3>Procedurally Generated Terrain</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/proced.jpg" alt="Procedurally Generated Terrain">
-            </div>
-            <p>Building upon the wave generation, this project extends the concept to generate terrain using a different algorithm to create more practical environments for game development.</p>
-        </div>
-    </div>
-
-    <!-- Project 7: Evolutionary Algorithms -->
-    <div class="project" id="evolutionary-algorithms">
-        <div class="project-header">
-            <h3>Evolutionary Algorithms</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/evolutionary_algorithm.png" alt="Evolutionary Algorithms">
-            </div>
-            <p>In this project, I created an algorithm that evolves cars to travel greater distances in shorter times while avoiding local optimums. It demonstrates the power of evolutionary strategies in solving complex problems.</p>
-        </div>
-    </div>
-
-    <!-- Project 8: Game Development and Math -->
-    <div class="project" id="game-dev-math">
-        <div class="project-header">
-            <h3>Game Development and Math</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/math1.png" alt="Game Development and Math 1">
-                <img src="images/unity_shape.png" alt="Game Development and Math 2">
-            </div>
-            <p>Math plays a vital role in game development. This project explores the visual effects of math in virtual environments, such as generating cellular automata and cubes in Unity's world space, driven by algorithmic principles.</p>
-        </div>
-    </div>
-
-    <!-- Project 9: Goblin 3D Model -->
-    <div class="project" id="goblin-model">
-        <div class="project-header">
-            <h3>Goblin 3D Model</h3>
-            <p class="role">Individual Project</p>
-        </div>
-        <div class="project-content">
-            <div class="project-images">
-                <img src="images/Goblin.png" alt="Goblin 3D Model">
-            </div>
-            <p>This project showcases a 3D model of a goblin character, created for use in a game. It helped me hone my skills in character modeling and asset creation.</p>
-        </div>
-    </div>
-</section>
-
-
-        <!-- Contact Section with Parallax Background -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-info">
-                    <p><a href="mailto:damienharwood14@gmail.com">Email</a></p>
-                    <p><a href="https://github.com/Vulth01">GitHub</a></p>
-                    <p><a href="https://www.linkedin.com/in/damien-harwood-0791931a4/">LinkedIn</a></p>
-                    <p><a href="https://www.codewars.com/users/Vulth">Codewars</a></p>
-                    <p><a href="https://leetcode.com/u/Vulth/">LeetCode</a></p>
+        
+        <!--    PROJECTS    -->
+        <section id="projects" class="toggle-section">
+            <h2>Projects</h2>
+            <p>Details about my projects...</p>
+        
+            <!--    Project 1: Solace Engine   -->
+            <div class="project" id="solace">
+                <div class="project-header">
+                    <h3>Solace Engine</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/Solace_Create.png" alt="Solace Engine Create">
+                        <img src="images/Solace_Open.png" alt="Solace Engine Open">
+                        <img src="images/Solace_Editor_.png" alt="Solace Engine Editor">
+                    </div>
+                    <p>I am currently developing a game engine by the name of Solace. This project has and will help me grow my understanding of the development of games and efficiency in programming.</p>
                 </div>
             </div>
+
+            <!-- Project 2: Artificial Intelligence -->
+            <div class="project" id="ai-creatures">
+                <div class="project-header">
+                    <h3>AI & Evolution</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/slimes.png" alt="AI Creatures Slimes">
+                    </div>
+                    <p>This project features both neural networks and evolutionary algorithms.  The creatures must learn optimal methods of searching for food, so that they may reproduce to maintain their bloodline.</p>
+                </div>
+            </div>
+
+                    
+            <!-- Project 3: OpenGL Chess -->
+            <div class="project" id="openGL">
+                <div class="project-header">
+                    <h3>OpenGL Chess</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/chess.png" alt="OpenGL Chess">
+                        <img src="images/stunk.jpg" alt="OpenGL Chess Additional Image">
+                    </div>
+                    <p>Chess board, pieces, and terrain created with OpenGL. This project required plotting all vertices, positioning the objects once they're made, creating an import method and using it for textures, applying said textures, and finally creating the terrain and the skybox around it all. This is all done purely through C++.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 4: Grounding -->
+            <div class="project" id="grounding">
+                <div class="project-header">
+                    <h3>Grounding</h3>
+                    <p class="role">Team Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/Grounding.png" alt="Grounding Project Image 1">
+                        <img src="images/Grounding_unity.png" alt="Grounding Project Image 2">
+                    </div>
+                    <p>This game addresses mental health and panic attacks, bringing attention to what panic attacks are and how people can either deal with them, or help people they know that have them.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 5: Procedurally Generated Waves -->
+            <div class="project" id="procedural-waves">
+                <div class="project-header">
+                    <h3>Procedurally Generated Waves</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-video">
+                        <video controls>
+                            <source src="images/wave_vid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>This project involves the procedural generation of waves with collision meshes. It also includes a mini-game where players shoot orange cubes to score points and progress to deeper levels. The purple cubes demonstrate the mesh colliders in action.</p>
+                </div>
+            </div>
+
+
+            <!-- Project 6: Procedurally Generated Terrain -->
+            <div class="project" id="procedural-terrain">
+                <div class="project-header">
+                    <h3>Procedurally Generated Terrain</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/proced.jpg" alt="Procedurally Generated Terrain">
+                    </div>
+                    <p>Building upon the wave generation, this project extends the concept to generate terrain using a different algorithm to create more practical environments for game development.</p>
+                </div>
+            </div>
+
+            <!-- Project 7: Evolutionary Algorithms -->
+            <div class="project" id="evolutionary-algorithms">
+                <div class="project-header">
+                    <h3>Evolutionary Algorithms</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/evolutionary_algorithm.png" alt="Evolutionary Algorithms">
+                    </div>
+                    <p>In this project, I created an algorithm that evolves cars to travel greater distances in shorter times while avoiding local optimums. It demonstrates the power of evolutionary strategies in solving complex problems.</p>
+                </div>
+            </div>
+
+            <!-- Project 8: Game Development and Math -->
+            <div class="project" id="game-dev-math">
+                <div class="project-header">
+                    <h3>Game Development and Math</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/math1.png" alt="Game Development and Math 1">
+                        <img src="images/unity_shape.png" alt="Game Development and Math 2">
+                    </div>
+                    <p>Math plays a vital role in game development. This project explores the visual effects of math in virtual environments, such as generating cellular automata and cubes in Unity's world space, driven by algorithmic principles.</p>
+                </div>
+            </div>
+
+            <!-- Project 9: Goblin 3D Model -->
+            <div class="project" id="goblin-model">
+                <div class="project-header">
+                    <h3>Goblin 3D Model</h3>
+                    <p class="role">Individual Project</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <img src="images/Goblin.png" alt="Goblin 3D Model">
+                    </div>
+                    <p>This project showcases a 3D model of a goblin character, created for use in a game. It helped me hone my skills in character modeling and asset creation.</p>
+                </div>
+            </div>
+
+
+
         </section>
-    </main>
+        
+        
+        <!--    CAREER    -->
+        <section id="career" class="toggle-section">
+            <h2>Career</h2>
+            <p>Details about my career...</p>
 
-    <footer>
-        <p>&copy; 2025 Damien Harwood. All rights reserved.</p>
-    </footer>
+        
+            <div class="career" id="remoteng">
+                <div class="career-header">
+                    <h3>Remote Engineer - First Technology</h3>
+                </div>
+                <div class="career-content">
+                    <p> Orchestrated and managed multiple software deployments on devices
+                        nationally, while mentoring junior colleagues in a team of six. <br>
+                        Successfully planned, organized, and directed two projects for large
+                        companies in the role of project manager.
+                        </p>
+                </div>
+            </div>
+        
+            <div class="career" id="gamedev">
+                <div class="career-header">
+                    <h3>Junior Game Developer - SUN</h3>
+                </div>
+                <div class="career-content">
+                    <p> Developed and maintained the software for several games owned by
+                        SUN using Construct 3, JavaScript, and WHM.</p>
+                </div>
+            </div>
+        
+            <div class="career" id="sre">
+                <div class="career-header">
+                    <h3>Site-Reliability Engineer - Bitcast</h3>
+                </div>
+                <div class="career-content">
+                    <p> Developed, managed, and maintained systems as well as several
+                        programs and servers for clients using Python, Git Bash, Django, AWS,
+                        Kubernetes, Docker, Terraform, and Grafana</p>
+                </div>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+            <div class="career" id="tutor">
+                <div class="career-header">
+                    <h3>Tutor - Game Design and Development</h3>
+                </div>
+                <div class="career-content">
+                    <p>
+                        Assisted students with understanding and developing their projects, providing support on coding with
+                        C# and troubleshooting within Unity.</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <!--    SKILLS    -->
+        <section id="skills" class="toggle-section">
+            <h2>Skills</h2>
+            <p>Details about my skills...</p>
+
+
+            
+            <div class="skills" id="gamedev">
+                <div class="skills-header">
+                    <h3>Game Development</h3>
+                    <p class="role"> C#, Unity, Unreal Engine, C++, Construct 3, JavaScript </p>
+                </div>
+            </div>
+            
+            <div class="skills" id="ai">
+                <div class="skills-header">
+                    <h3>AI & Algorithms</h3>
+                    <p class="role"> Neural Networks; Behavioral AI; Evolutionary Algorithms </p>
+                </div>
+            </div>
+            
+            <div class="skills" id="procedural">
+                <div class="skills-header">
+                    <h3>Procedural Content</h3>
+                    <p class="role">  Procedural Generation; Graphics Programming </p>
+                </div>
+            </div>
+            
+            <div class="skills" id="design">
+                <div class="skills-header">
+                    <h3>Design & UX</h3>
+                    <p class="role"> 3D Modeling, Level Design, Sound Design, Narrative Design, UX/UI </p>
+                </div>
+            </div>
+            
+            <div class="skills" id="math">
+                <div class="skills-header">
+                    <h3>Mathematics & Physics</h3>
+                    <p class="role"> Calculus, Linear Algebra, 3D Physics, Abstract Algebra </p>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
 </body>
 </html>
