@@ -1,18 +1,11 @@
-// Parallax Effect for Header
-$(window).scroll(function() {
-    var scrollPos = $(this).scrollTop();
-    $('header').css('background-position', 'center ' + (scrollPos * 0.5) + 'px');
-});
-
-// Animating Project Content on Scroll
-$(document).ready(function () {
-    $(window).on('scroll', function () {
-        var scrollPos = $(window).scrollTop();
-        $('.project').each(function () {
-            var topOffset = $(this).offset().top;
-            if (scrollPos > topOffset - $(window).height() + 100) {
-                $(this).addClass('animated');
-            }
-        });
+function toggleVisibility(sectionId) {
+    const sections = document.querySelectorAll('.toggle-section');
+    sections.forEach(section => {
+        section.classList.remove('show');
     });
-});
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.classList.add('show');
+    }
+}
