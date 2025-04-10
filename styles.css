@@ -259,7 +259,9 @@ header {
     color: #e5feff;
     line-height: 1.5;
 }
-
+#career b {
+    color: #00fff2;
+}
 
 
 /* SKILLS */
