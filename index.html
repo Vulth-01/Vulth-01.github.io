@@ -4,9 +4,20 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Game and software developer specializing in C++ engine development."
+      content="Full-stack developer in Durban, South Africa. TypeScript, React, Next.js and Node.js. Three years building and running production systems end to end."
     />
-    <title>Damien Harwood - Game Developer</title>
+    <title>Damien Harwood — Full-Stack Developer</title>
+
+    <!-- Social preview, for when a recruiter pastes the link into Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Damien Harwood — Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack developer in Durban. TypeScript, React, Next.js, Node.js."
+    />
+    <meta property="og:url" content="https://vulth-01.github.io/" />
+    <meta property="og:image" content="https://vulth-01.github.io/images/unity_shape.png" />
+    <meta name="twitter:card" content="summary" />
 
     <!-- External CSS -->
     <link
@@ -29,14 +40,18 @@
     <div class="container">
       <header>
         <div id="title">Damien Harwood</div>
-        <img class="landing_logo" src="images/unity_shape.png" alt="Portrait" />
+        <img class="landing_logo" src="images/unity_shape.png" alt="Site logo" />
       </header>
 
       <section id="about_me">
         <p>
-          Hi there! I'm Damien, a passionate game developer who enjoys creating
-          immersive gaming experiences using C# and C++. Welcome to my
-          portfolio!
+          Full-stack developer based in Durban with three years of hands-on
+          experience building and maintaining production software using
+          TypeScript, React and Node.js. For the past two years I have been the
+          sole developer within an ISP and its group companies, taking ownership
+          of around ten production systems from design through to deployment and
+          support. Currently looking for a role with an engineering team around
+          it.
         </p>
       </section>
 
@@ -57,33 +72,252 @@
           ><i class="fa fa-linkedin"></i
         ></a>
         <a
+          href="Damien-Harwood-CV.pdf"
+          target="_blank"
+          title="Download my CV"
+          ><i class="fa fa-file-text-o"></i
+        ></a>
+        <a
           href="https://www.codewars.com/users/Vulth"
           target="_blank"
           title="Codewars"
           ><i class="fa fa-terminal"></i
         ></a>
         <a href="https://leetcode.com/u/Vulth/" target="_blank" title="Leetcode"
-          ><i class="fa fa-terminal"></i
+          ><i class="fa fa-code"></i
         ></a>
       </section>
 
       <section class="buttons">
         <div class="button_container">
-          <button class="btn" onclick="toggleVisibility('projects')">
-            Projects
-          </button>
           <button class="btn" onclick="toggleVisibility('career')">
             Career
           </button>
           <button class="btn" onclick="toggleVisibility('skills')">
             Skills
           </button>
+          <button class="btn" onclick="toggleVisibility('projects')">
+            Projects
+          </button>
+        </div>
+      </section>
+
+      <!--    CAREER    -->
+      <section id="career" class="toggle-section">
+        <h2>Career</h2>
+
+        <div class="career" id="urbandev">
+          <div class="career-header">
+            <h3>Software Developer – UrbanX</h3>
+          </div>
+          <div class="career-content">
+            <p>
+              Sole developer across roughly ten production systems for an ISP
+              and its group companies, covering customer-facing web, internal
+              APIs, third-party integrations and the deployment estate. Built
+              with <b>Next.js (React, TypeScript)</b>, <b>Node.js</b>,
+              <b>Express</b>, <b>MongoDB</b>, <b>MySQL</b>, <b>Docker</b> and
+              <b>CI/CD pipelines</b>. <br /><br />
+              Designed and built a shared internal API that took a core
+              application from over thirty seconds to under five. Designed
+              role-based access control from first principles across a frontend
+              and an API. Integrated eleven third-party systems in production,
+              including billing and CRM platforms, credit bureaux, payment
+              gateways and messaging APIs. Remediated OWASP Top 10 defect
+              classes across live systems, and re-architected the database
+              estate onto per-service isolation. <br /><br />
+              Comfortable from a requirements conversation with a non-technical
+              team through to a production deploy, and used to owning what
+              happens afterwards.
+            </p>
+          </div>
+        </div>
+
+        <div class="career" id="remoteng">
+          <div class="career-header">
+            <h3>Remote Engineer - First Technology</h3>
+          </div>
+          <div class="career-content">
+            <p>
+              Orchestrated and managed multiple software deployments on devices
+              nationally, while mentoring junior colleagues in a team of six.
+              <br />
+              Successfully planned, organized, and directed two projects for
+              large companies in the role of <b>project manager</b>.
+            </p>
+          </div>
+        </div>
+
+        <div class="career" id="gamedev">
+          <div class="career-header">
+            <h3>Junior Game Developer - SUN</h3>
+          </div>
+          <div class="career-content">
+            <p>
+              Developed and maintained the software for several games owned by
+              SUN using <b>Construct 3</b>, <b>JavaScript</b>, and <b>WHM</b>.
+            </p>
+          </div>
+        </div>
+
+        <div class="career" id="sre">
+          <div class="career-header">
+            <h3>Site-Reliability Engineer - Bitcast</h3>
+          </div>
+          <div class="career-content">
+            <p>
+              Developed, managed, and maintained systems as well as several
+              programs and servers for clients using <b>Python</b>,
+              <b>Git Bash</b>, <b>Django</b>, <b>AWS</b>, <b>Kubernetes</b>,
+              <b>Docker</b>, <b>Terraform</b>, and <b>Grafana</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="career" id="tutor">
+          <div class="career-header">
+            <h3>Tutor - Game Design and Development</h3>
+          </div>
+          <div class="career-content">
+            <p>
+              Assisted students with understanding and developing their
+              projects, providing support on coding with
+              <b>C#</b> and troubleshooting within <b>Unity</b>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--    SKILLS    -->
+      <section id="skills" class="toggle-section">
+        <h2>Skills</h2>
+
+        <div class="skills" id="programming">
+          <div class="skills-header">
+            <h3>Languages & Scripting</h3>
+            <p class="role">
+              TypeScript, JavaScript, C#, C++, Python, SQL, HTML/CSS, Bash,
+              PowerShell, CMD, JSON, Markdown, Cron, Java, Lisp
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="art-environments">
+          <div class="skills-header">
+            <h3>Frameworks & Libraries</h3>
+            <p class="role">
+              Next.js (React), Node.js, Bun, React, TailwindCSS, Drizzle ORM,
+              TRPC, Hono, Zod, Nodemailer, Blazor (ASP.NET Core)
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="databases">
+          <div class="skills-header">
+            <h3>Databases & Storage</h3>
+            <p class="role">
+              MongoDB, MySQL, PostgreSQL, Firebase, AWS S3, MinIO, HeidiSQL
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="api">
+          <div class="skills-header">
+            <h3>API & Integrations</h3>
+            <p class="role">
+              REST API design, OpenAPI, third-party integration, webhooks,
+              reconciliation, OAuth2 / NextAuth.js, Google
+              Maps/Geocoding/Places, AWS SDK, Postman, Hono
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="devops">
+          <div class="skills-header">
+            <h3>DevOps & Infrastructure</h3>
+            <p class="role">
+              Docker, Git/GitHub, npm & pnpm, CI/CD (build, typecheck, lint,
+              deploy), Environment Variable Management, Production Monitoring,
+              Kubernetes, Terraform, Grafana
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="security">
+          <div class="skills-header">
+            <h3>Security</h3>
+            <p class="role">
+              NextAuth.js (providers, callbacks, session handling), OAuth2/JWT,
+              Custom Middleware (rate limiting, path normalization, security
+              headers), CVE Mitigation (auth bypass, path traversal, XSS,
+              Unicode/Null Byte attacks)
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="seo">
+          <div class="skills-header">
+            <h3>SEO & Analytics</h3>
+            <p class="role">
+              SEO Optimization, Bing Webmaster, Google Analytics, Google Tag
+              Manager, Schema Markup, Automated Sitemaps
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="environments">
+          <div class="skills-header">
+            <h3>Coding & Art Environments</h3>
+            <p class="role">
+              Visual Studio 2022, Visual Studio Code, Emacs/Portacle, Construct
+              3, Android Studio, Unity, Unreal Engine, Blender, 3DS Max,
+              Photoshop, After-Effects
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="ai">
+          <div class="skills-header">
+            <h3>AI & Algorithms</h3>
+            <p class="role">
+              Neural Networks; Behavioral AI; Evolutionary Algorithms
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="procedural">
+          <div class="skills-header">
+            <h3>Procedural Content</h3>
+            <p class="role">Procedural Generation; Graphics Programming</p>
+          </div>
+        </div>
+
+        <div class="skills" id="design">
+          <div class="skills-header">
+            <h3>Design & UX</h3>
+            <p class="role">
+              3D Modeling, Level Design, Sound Design, Narrative Design, UX/UI
+            </p>
+          </div>
+        </div>
+
+        <div class="skills" id="math">
+          <div class="skills-header">
+            <h3>Mathematics & Physics</h3>
+            <p class="role">
+              Calculus, Linear Algebra, 3D Physics, Abstract Algebra
+            </p>
+          </div>
         </div>
       </section>
 
       <!--    PROJECTS    -->
       <section id="projects" class="toggle-section">
-        <h2>Projects</h2>
+        <h2>Personal &amp; University Projects</h2>
+        <p class="section-note">
+          Game development, graphics and AI work from my degree and my own time.
+          It is where I learned to program, and I still enjoy it.
+        </p>
 
         <!-- Solace Engine   -->
         <div class="project" id="solace">
@@ -297,219 +531,6 @@
               A showcase of my 3D goblin character model, created for use in a
               game. This helped me hone my skills in character modeling and
               asset creation.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--    CAREER    -->
-      <section id="career" class="toggle-section">
-        <h2>Career</h2>
-
-        <div class="career" id="urbandev">
-          <div class="career-header">
-            <h3>Software Developer – UrbanX</h3>
-          </div>
-          <div class="career-content">
-            <p>
-              Sole developer and technical owner for the full-stack UrbanX
-              platform, responsible for architecting, building, and maintaining
-              all customer-facing and internal admin applications. Delivered
-              robust, production-grade solutions using
-              <b>Next.js (React, TypeScript)</b>, <b>Node.js</b>,
-              <b>MongoDB</b>, <b>Docker</b>, <b>CI/CD pipelines</b>,
-              <b>TRPC</b>, <b>TailwindCSS</b>, and <b>Drizzle ORM</b>.
-              Integrated and automated critical APIs (Splynx, Netcash, Google
-              Maps, AWS, Instatus) and developed advanced CMS workflows
-              (approval, scheduling, publishing, notifications). Implemented
-              secure authentication (NextAuth.js, OAuth2/JWT), custom middleware
-              for security, rate limiting, and path normalization, and managed
-              all DevOps processes (build, deploy, monitoring). <br /><br />
-              <b>Key Results:</b>
-              <br />
-              +48% mobile and +10% desktop performance<br />
-              +3,900% increase in search impressions<br />
-              100% accessibility and best practices scores
-              <br /><br />
-              Translated business requirements into scalable, maintainable
-              software with minimal oversight.
-            </p>
-          </div>
-        </div>
-
-        <div class="career" id="remoteng">
-          <div class="career-header">
-            <h3>Remote Engineer - First Technology</h3>
-          </div>
-          <div class="career-content">
-            <p>
-              Orchestrated and managed multiple software deployments on devices
-              nationally, while mentoring junior colleagues in a team of six.
-              <br />
-              Successfully planned, organized, and directed two projects for
-              large companies in the role of <b>project manager</b>.
-            </p>
-          </div>
-        </div>
-
-        <div class="career" id="gamedev">
-          <div class="career-header">
-            <h3>Junior Game Developer - SUN</h3>
-          </div>
-          <div class="career-content">
-            <p>
-              Developed and maintained the software for several games owned by
-              SUN using <b>Construct 3</b>, <b>JavaScript</b>, and <b>WHM</b>.
-            </p>
-          </div>
-        </div>
-
-        <div class="career" id="sre">
-          <div class="career-header">
-            <h3>Site-Reliability Engineer - Bitcast</h3>
-          </div>
-          <div class="career-content">
-            <p>
-              Developed, managed, and maintained systems as well as several
-              programs and servers for clients using <b>Python</b>,
-              <b>Git Bash</b>, <b>Django</b>, <b>AWS</b>, <b>Kubernetes</b>,
-              <b>Docker</b>, <b>Terraform</b>, and <b>Grafana</b>
-            </p>
-          </div>
-        </div>
-
-        <div class="career" id="tutor">
-          <div class="career-header">
-            <h3>Tutor - Game Design and Development</h3>
-          </div>
-          <div class="career-content">
-            <p>
-              Assisted students with understanding and developing their
-              projects, providing support on coding with
-              <b>C#</b> and troubleshooting within <b>Unity</b>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--    SKILLS    -->
-      <section id="skills" class="toggle-section">
-        <h2>Skills</h2>
-
-        <div class="skills" id="programming">
-          <div class="skills-header">
-            <h3>Languages & Scripting</h3>
-            <p class="role">
-              TypeScript, JavaScript, C#, C++, Python, SQL, HTML/CSS, Bash,
-              PowerShell, CMD, JSON, Markdown, Cron, Java, Lisp
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="art-environments">
-          <div class="skills-header">
-            <h3>Frameworks & Libraries</h3>
-            <p class="role">
-              Next.js (React), Node.js, Bun, React, TailwindCSS, Drizzle ORM,
-              TRPC, Hono, Zod, Nodemailer, Blazor (ASP.NET Core)
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="databases">
-          <div class="skills-header">
-            <h3>Databases & Storage</h3>
-            <p class="role">
-              MongoDB, MySQL, PostgreSQL, Firebase, AWS S3, MinIO, HeidiSQL
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="api">
-          <div class="skills-header">
-            <h3>API & Integrations</h3>
-            <p class="role">
-              REST, Splynx, UrbanX Internal API, Netcash, Google
-              Maps/Geocoding/Place, NextAuth.js, Instatus, 28east, AWS SDK,
-              Postman, Hono, WHMCS
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="devops">
-          <div class="skills-header">
-            <h3>DevOps & Infrastructure</h3>
-            <p class="role">
-              Docker, Git/GitHub, npm & pnpm, CI/CD (build, typecheck, lint,
-              deploy), Environment Variable Management, Production Monitoring,
-              Kubernetes, Terraform, Grafana
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="security">
-          <div class="skills-header">
-            <h3>Security</h3>
-            <p class="role">
-              NextAuth.js (providers, callbacks, session handling), OAuth2/JWT,
-              Custom Middleware (rate limiting, path normalization, security
-              headers), CVE Mitigation (auth bypass, path traversal, XSS,
-              Unicode/Null Byte attacks)
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="seo">
-          <div class="skills-header">
-            <h3>SEO & Analytics</h3>
-            <p class="role">
-              SEO Optimization, Bing Webmaster, Google Analytics, Google Tag
-              Manager, Schema Markup, Automated Sitemaps
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="environments">
-          <div class="skills-header">
-            <h3>Coding & Art Environments</h3>
-            <p class="role">
-              Visual Studio 2022, Visual Studio Code, Emacs/Portacle, Construct
-              3, Android Studio, Unity, Unreal Engine, Blender, 3DS Max,
-              Photoshop, After-Effects
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="ai">
-          <div class="skills-header">
-            <h3>AI & Algorithms</h3>
-            <p class="role">
-              Neural Networks; Behavioral AI; Evolutionary Algorithms
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="procedural">
-          <div class="skills-header">
-            <h3>Procedural Content</h3>
-            <p class="role">Procedural Generation; Graphics Programming</p>
-          </div>
-        </div>
-
-        <div class="skills" id="design">
-          <div class="skills-header">
-            <h3>Design & UX</h3>
-            <p class="role">
-              3D Modeling, Level Design, Sound Design, Narrative Design, UX/UI
-            </p>
-          </div>
-        </div>
-
-        <div class="skills" id="math">
-          <div class="skills-header">
-            <h3>Mathematics & Physics</h3>
-            <p class="role">
-              Calculus, Linear Algebra, 3D Physics, Abstract Algebra
             </p>
           </div>
         </div>

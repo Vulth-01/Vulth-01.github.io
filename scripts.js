@@ -9,3 +9,9 @@ function toggleVisibility(sectionId) {
         section.classList.add('show');
     }
 }
+
+// Show the career section on load. An empty landing page asks a visitor to
+// work for the content, and most will not.
+document.addEventListener('DOMContentLoaded', () => {
+    toggleVisibility('career');
+});

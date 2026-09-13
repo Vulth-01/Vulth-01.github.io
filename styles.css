@@ -125,6 +125,17 @@ header {
 
 
 
+/* Note under a section heading */
+.section-note {
+    max-width: 700px;
+    margin: -10px auto 30px;
+    color: #b8b8b8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+
 /* SECTIONS */
 
 
